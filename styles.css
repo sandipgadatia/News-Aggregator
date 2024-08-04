@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    width: 70%;
+    max-width: 500px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .news-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .news-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .news-info {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .news-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .news-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .news-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #007bff;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
